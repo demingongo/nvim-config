@@ -26,7 +26,7 @@ The repository contains a script for Arch and Fedora.
 
 [Node](https://nodejs.org/en/) is required. I recommend to install it from [nvm](https://github.com/nvm-sh/nvm).
 
-Clone the repository. Execute the script that will install the config file and dependencies:
+Clone the repository. Execute the script that will install the config files and dependencies:
 ```sh
 ./install.sh
 ```
