@@ -9,7 +9,7 @@ My nvim config files.
 
 ## How-to
 
-Proceed to [Installation](##Installation) then [Configuration](##Configuration)
+Proceed to [Installation](#Installation) then [Configuration](#Configuration)
 
 ## Installation
 
