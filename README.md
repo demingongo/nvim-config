@@ -35,7 +35,7 @@ Clone the repository. Execute the script that will install the config file and d
 
 ## Configuration
 
-After the installation, run `nvim`. It might display errors and its okay as the plugins need to be installed. Just run `:PlugInstall`. Another error might display because of `nvim-treesitter` and its okay if the plugin was not already installed (See the `{'do': ':TSUpdate'}` argument). Just quit nvim (`:q`) and run it again (`nvim`). Plugins dependencies will be installing and once finished, you will be able to use neovim.
+After the installation, run `nvim`. It might display errors and it's okay as the plugins need to be installed. Just run `:PlugInstall`. Another error might display because of `nvim-treesitter` and it's okay if the plugin was not already installed (See the `{'do': ':TSUpdate'}` argument). Just quit nvim (`:q`) and run it again (`nvim`). Plugins dependencies will be installing and once finished, you will be able to use neovim.
 
 You might have to install fonts for `nvim-tree` to display icons.
 See how to [install Hack nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-3-install-script) (the only ones you need for this).
