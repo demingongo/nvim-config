@@ -29,11 +29,33 @@ if [[ "$c_answer_neovim" != "y" ]]; then
 fi
 
 if [[ "$c_answer_neovim_dep" == "y" ]]; then
+
+    # Package managers
+    declare -A PACKAGE_INSTALLERS=(
+        [dnf]="dnf install neovim gcc-c++ go"
+        [pacman]="pacman -S neovim gcc go"
+    )
+
+    INSTALL_PKG=''
+
+    for cmd in "${!PACKAGE_INSTALLERS[@]}"
+    do
+        if ! command -v "$cmd" &> /dev/null
+        then
+            # echo "$cmd could not be found"		
+        else
+            # echo "OK, $cmd exists"
+            INSTALL_PKG="${PACKAGE_INSTALLERS[$cmd]}"
+            break
+        fi
+    done
     ## Neovim
     #
     # neovim, gcc-c++, go
     #
-    sudo dnf install neovim gcc-c++ go
+    if [[ -n INSTALL_PKG ]]; then
+	eval sudo "$INSTALL_PKG"
+    fi
     #
     # vim-plug: https://github.com/junegunn/vim-plug
     #
