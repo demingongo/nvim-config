@@ -47,6 +47,5 @@ if [[ "$c_answer_neovim_dep" == "y" ]]; then
     # lsp
     #
     npm i -g pyright @angular/language-server vscode-langservers-extracted typescript typescript-language-server yaml-language-server
-    set -e
 fi
 
