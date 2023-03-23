@@ -56,5 +56,5 @@ List of plugins used:
 - [image](https://github.com/samodostal/image.nvim)
 - [plenary](https://github.com/nvim-lua/plenary.nvim)
 - [baleina](https://github.com/m00qek/baleia.nvim)
-- [catpuccin](https://github.com/catppuccin/nvim)
+- [catppuccin](https://github.com/catppuccin/nvim)
 
