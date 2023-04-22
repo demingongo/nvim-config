@@ -6,6 +6,8 @@ Plug '~/Programs/nvim/thematrix'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " https://github.com/shaunsingh/solarized.nvim
 Plug 'shaunsingh/solarized.nvim'
+" https://github.com/folke/tokyonight.nvim
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " https://github.com/nvim-treesitter/nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
