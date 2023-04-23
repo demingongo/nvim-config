@@ -37,6 +37,9 @@ Plug 'hrsh7th/cmp-nvim-lsp' " LSP source for nvim-cmp
 Plug 'saadparwaiz1/cmp_luasnip' " Snippets source for nvim-cmp
 Plug 'L3MON4D3/LuaSnip' " Snippets plugin
 
+" https://github.com/norcalli/nvim-colorizer.lua
+Plug 'norcalli/nvim-colorizer.lua'
+
 call plug#end()
 
 " Load setup
