@@ -1,5 +1,6 @@
 syntax enable
-set background=light
+
+source $HOME/.config/nvim/plugins/themes/feline/gruvbox.lua.vim
 
 lua <<EOF
 

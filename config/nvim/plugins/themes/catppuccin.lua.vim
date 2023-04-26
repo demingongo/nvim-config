@@ -1,3 +1,5 @@
+source $HOME/.config/nvim/plugins/themes/feline/catppuccin-macchiato.lua.vim
+
 lua <<EOF
 
 require("catppuccin").setup({

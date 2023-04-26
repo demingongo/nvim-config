@@ -8,6 +8,8 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'shaunsingh/solarized.nvim'
 " https://github.com/folke/tokyonight.nvim
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" https://github.com/ellisonleao/gruvbox.nvim 
+Plug 'ellisonleao/gruvbox.nvim'
 
 " https://github.com/nvim-treesitter/nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

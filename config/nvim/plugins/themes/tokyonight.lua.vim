@@ -1,5 +1,3 @@
-set background=light
-
 lua <<EOF
 
 require("tokyonight").setup({
