@@ -2,6 +2,8 @@ call plug#begin()
 
 " https://github.com/luisiacc/the-matrix.nvim
 Plug '~/Programs/nvim/thematrix'
+" https://github.com/mweisshaupt1988/neobeans.vim
+Plug 'mweisshaupt1988/neobeans.vim', { 'as': 'neobeans' }
 " https://github.com/catppuccin/nvim
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " https://github.com/shaunsingh/solarized.nvim
@@ -41,6 +43,11 @@ Plug 'L3MON4D3/LuaSnip' " Snippets plugin
 
 " https://github.com/norcalli/nvim-colorizer.lua
 Plug 'norcalli/nvim-colorizer.lua'
+
+" https://github.com/Dax89/automaton.nvim
+Plug 'Dax89/automaton.nvim'
+Plug 'nvim-telescope/telescope.nvim' 
+Plug 'mfussenegger/nvim-dap' " Debug support for 'launch' configurations (Optional)
 
 call plug#end()
 

@@ -19,7 +19,6 @@ local MODE_COLORS = {
   ['NONE'] = 'yellow',
 }
 
--- gruvbox theme
 local CATPPUCCIN_MACCHIATO = {
   fg = '#CAD3F5',
   bg = '#24273A',
