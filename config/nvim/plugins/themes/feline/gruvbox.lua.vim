@@ -72,15 +72,6 @@ function get_filetype()
   return filetype:lower()
 end
 
-function get_branchname()
-	local branch = vim.fn.system("git branch --show-current 2> /dev/null | tr -d '\n'")
-	if branch ~= "" then
-		return branch
-	else
-		return ""
-	end
-end
-
 --- get the cursor's line
 function get_line_cursor()
   local cursor_line, _ = unpack(vim.api.nvim_win_get_cursor(0))
@@ -146,11 +137,6 @@ function provide_filetype(component, opts)
   return get_filetype()
 end
 
--- provide the git branch name
-function provide_branchname(component, opts)
-  return get_branchname()
-end
-
 --
 -- 4. build the components
 --
@@ -185,13 +171,20 @@ table.insert(components.active[LEFT], {
 
 -- insert the branchname component
 table.insert(components.active[LEFT], {
-  name = 'branchname',
-  provider = wrapped_provider(provide_branchname, wrap_left),
-  right_sep = 'slant_right',
+  provider = "git_branch",
+  icon = ' ',
   hl = {
     bg = 'white',
     fg = 'black',
   },
+  left_sep = { str = "slant_right", hl = {
+    bg = 'white',
+    fg = 'black',
+  } },
+  right_sep = "slant_right",
+  enabled = function()
+    return vim.b.gitsigns_status_dict ~= nil
+  end,
 })
 
 -- insert the filename component after the mode component
