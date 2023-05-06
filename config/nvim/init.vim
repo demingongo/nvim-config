@@ -46,9 +46,14 @@ Plug 'L3MON4D3/LuaSnip' " Snippets plugin
 " https://github.com/norcalli/nvim-colorizer.lua
 Plug 'norcalli/nvim-colorizer.lua'
 
+" https://github.com/nvim-telescope/telescope-fzf-native.nvim
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+" https://github.com/nvim-telescope/telescope.nvim
+Plug 'nvim-telescope/telescope.nvim', {'branch': '0.1.x' }
+
 " https://github.com/Dax89/automaton.nvim
 Plug 'Dax89/automaton.nvim'
-Plug 'nvim-telescope/telescope.nvim' 
 Plug 'mfussenegger/nvim-dap' " Debug support for 'launch' configurations (Optional)
 
 call plug#end()

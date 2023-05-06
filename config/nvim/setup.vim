@@ -27,4 +27,7 @@ source $HOME/.config/nvim/plugins/nvim-lspconfig.lua.vim
 source $HOME/.config/nvim/plugins/colorizer.lua.vim
 
 "
+source $HOME/.config/nvim/plugins/telescope.lua.vim
+
+"
 source $HOME/.config/nvim/plugins/automaton.lua.vim
