@@ -32,8 +32,8 @@ if [[ "$c_answer_neovim_dep" == "y" ]]; then
 
     # Package managers
     declare -A PACKAGE_INSTALLERS=(
-        [dnf]="dnf install neovim gcc-c++ go"
-        [pacman]="pacman -S neovim gcc go"
+        [dnf]="dnf install neovim gcc-c++ go fzf"
+        [pacman]="pacman -S neovim gcc go fzf"
     )
 
     INSTALL_PKG=''
