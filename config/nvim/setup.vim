@@ -32,5 +32,8 @@ source $HOME/.config/nvim/plugins/telescope.lua.vim
 "
 source $HOME/.config/nvim/plugins/automaton.lua.vim
 
-" end, load mapping
+"
+source $HOME/.config/nvim/plugins/cellular-automaton.lua.vim
+
+" load mapping at the end
 source $HOME/.config/nvim/mapping.vim
