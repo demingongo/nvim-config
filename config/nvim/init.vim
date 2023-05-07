@@ -56,6 +56,9 @@ Plug 'nvim-telescope/telescope.nvim', {'branch': '0.1.x' }
 Plug 'Dax89/automaton.nvim'
 Plug 'mfussenegger/nvim-dap' " Debug support for 'launch' configurations (Optional)
 
+" https://github.com/Eandrju/cellular-automaton.nvim
+Plug 'eandrju/cellular-automaton.nvim'
+
 call plug#end()
 
 " Load setup
