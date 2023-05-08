@@ -1,0 +1,25 @@
+{
+    version: "1.0.0",
+
+    tasks: [
+        {
+            name: "Build",
+            type: "shell",
+            command: "cargo build",
+            cwd: "${workspace_folder}",
+            default: true
+	},
+	{
+            name: "Build-release",
+            type: "shell",
+            command: "cargo build --release",
+            cwd: "${workspace_folder}"
+	},
+	{
+            name: "Check",
+            type: "shell",
+            command: "cargo check",
+            cwd: "${workspace_folder}"
+	}
+    ]
+}

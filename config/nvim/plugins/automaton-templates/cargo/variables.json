@@ -1,0 +1,5 @@
+{
+    target_dir: "${workspace_folder}/target",
+    debug_dir: "${workspace_folder}/target/debug",
+    release_dir: "${workspace_folder}/target/release"
+}

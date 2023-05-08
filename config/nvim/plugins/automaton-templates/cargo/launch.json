@@ -1,0 +1,21 @@
+{
+    version: "1.0.0",
+
+    configurations: [
+        {
+            name: "Run",
+            program: "cargo run",
+            cwd: "${workspace_folder}",
+            depends: [ ],
+            default: true
+        },
+        {
+            name: "Run release",
+            program: "${ws.release_dir}/${workspace_name}",
+	    depends: [ "Build-release" ],
+            cwd: "${workspace_folder}",
+            depends: [ ],
+            default: true
+        }
+    ]
+}
