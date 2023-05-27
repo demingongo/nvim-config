@@ -13,9 +13,7 @@
             name: "Run release",
             program: "${ws.release_dir}/${workspace_name}",
 	    depends: [ "Build-release" ],
-            cwd: "${workspace_folder}",
-            depends: [ ],
-            default: true
+            cwd: "${workspace_folder}"
         }
     ]
 }
