@@ -161,28 +161,31 @@ table.insert(components.active[LEFT], {
 })
 
 -- insert the branchname component
-table.insert(components.active[LEFT], {
+table.insert(components.active[RIGHT], {
   provider = "git_branch",
   icon = ' ',
   hl = {
-    bg = 'brown',
+    bg = 'skyblue',
     fg = 'black',
   },
-  left_sep = { str = "slant_right", hl = {
-    bg = 'brown',
-    fg = 'black',
+  left_sep = { str = "slant_left", hl = {
+    fg = 'skyblue',
+    bg = 'black',
   } },
-  right_sep = "slant_right",
+  right_sep = { str = "slant_left", hl = {
+    bg = 'skyblue',
+    fg = 'black'
+  } },
   enabled = function()
     return vim.b.gitsigns_status_dict ~= nil
   end,
 })
 
 -- insert the filename component after the mode component
-table.insert(components.active[LEFT], {
+table.insert(components.active[RIGHT], {
   name = 'filename',
-  provider = wrapped_provider(provide_filename, wrap_left),
-  right_sep = 'slant_right',
+  provider = wrapped_provider(provide_filename, wrap_right),
+  left_sep = 'slant_left',
   hl = {
     bg = 'brown',
     fg = 'black',
