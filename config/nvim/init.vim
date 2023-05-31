@@ -14,6 +14,9 @@ Plug 'overcache/NeoSolarized'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " https://github.com/ellisonleao/gruvbox.nvim 
 Plug 'ellisonleao/gruvbox.nvim'
+" https://github.com/jesseleite/nvim-noirbuddy
+Plug 'tjdevries/colorbuddy.nvim', { 'branch': 'dev' }
+Plug 'jesseleite/nvim-noirbuddy'
 
 " https://github.com/nvim-treesitter/nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -59,9 +62,15 @@ Plug 'mfussenegger/nvim-dap' " Debug support for 'launch' configurations (Option
 " https://github.com/Eandrju/cellular-automaton.nvim
 Plug 'eandrju/cellular-automaton.nvim'
 
+" https://github.com/rust-lang/rust.vim
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
+
+set number
+syntax enable
+filetype plugin indent on
 
 " Load setup
 source $HOME/.config/nvim/setup.vim
 
-set number
