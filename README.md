@@ -6,6 +6,7 @@ My nvim config files.
 
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter)
+- [fzf](https://github.com/junegunn/fzf)
 
 ## How-to
 
@@ -56,5 +57,21 @@ List of plugins used:
 - [image](https://github.com/samodostal/image.nvim)
 - [plenary](https://github.com/nvim-lua/plenary.nvim)
 - [baleina](https://github.com/m00qek/baleia.nvim)
+- [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [automaton](https://github.com/Dax89/automaton.nvim)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [cellular-automaton](https://github.com/mfussenegger/nvim-dap)
+- [rust](https://github.com/rust-lang/rust.vim)
+- [colorbuddy](https://github.com/tjdevries/colorbuddy.nvim)
+
+color schemes:
+
 - [catppuccin](https://github.com/catppuccin/nvim)
+- [neobeans](https://github.com/mweisshaupt1988/neobeans.vim)
+- [NeoSolarized](https://github.com/overcache/NeoSolarized)
+- [tokyonight](https://github.com/folke/tokyonight.nvim)
+- [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
+- [noirbuddy](https://github.com/jesseleite/nvim-noirbuddy)
 
