@@ -1,3 +1,5 @@
+source $HOME/.config/nvim/plugins/themes/feline/noirbuddy.lua.vim
+
 lua <<EOF
 
 require("noirbuddy").setup {
