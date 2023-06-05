@@ -16,16 +16,16 @@ Proceed to [Installation](#Installation) then [Configuration](#Configuration)
 
 ### Manually (linux)
 
-Install the dependencies. Clone the repository. Copy its directory `config/nvim` to `~/.config/`.
+Install the [dependencies](#Dependencies). Clone the repository. Copy its directory `config/nvim` to `~/.config/`.
 ```sh
 cp -r config/nvim ~/.config/
 ```
 
 ### From script (linux)
 
-The repository contains a script for Arch and Fedora. 
+The repository contains a common script (install.sh) for Arch Linux and Fedora. 
 
-[Node](https://nodejs.org/en/) is required. I recommend to install it from [nvm](https://github.com/nvm-sh/nvm).
+First, [Node](https://nodejs.org/en/) is required. I recommend to install it from [nvm](https://github.com/nvm-sh/nvm).
 
 Clone the repository. Execute the script that will install the config files and dependencies:
 ```sh
