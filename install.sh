@@ -42,7 +42,8 @@ if [[ "$c_answer_neovim_dep" == "y" ]]; then
     do
         if ! command -v "$cmd" &> /dev/null
         then
-            # echo "$cmd could not be found"		
+            # echo "$cmd could not be found"
+	    echo
         else
             # echo "OK, $cmd exists"
             INSTALL_PKG="${PACKAGE_INSTALLERS[$cmd]}"
