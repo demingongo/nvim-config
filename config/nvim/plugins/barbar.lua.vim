@@ -38,15 +38,6 @@ require'bufferline'.setup {
   --  - middle-click: delete buffer
   clickable = true,
 
-  -- Enables / disables diagnostic symbols
-  diagnostics = {
-    -- you can use a list
-    {enabled = true, icon = 'ﬀ'}, -- ERROR
-    {enabled = false}, -- WARN
-    {enabled = false}, -- INFO
-    {enabled = true},  -- HINT
-  },
-
   -- Disable highlighting alternate buffers
   highlight_alternate = false,
 
@@ -59,20 +50,37 @@ require'bufferline'.setup {
   -- Enable/disable icons
   -- if set to 'numbers', will show buffer index in the tabline
   -- if set to 'both', will show buffer index and icons in the tabline
-  icons = true,
+  -- Configure icons on the bufferline.
+  icons = { 
+    filetype = { 
+      enabled = true 
+    },
+    button = '',
+    modified = {
+      button = '●'
+    },
+    pinned = {
+      button = '車'
+    },
+    separator = { left = ' ' },
+    inactive = {
+      separator = { left = ' ' }
+    },
+    -- Enables / disables diagnostic symbols
+    diagnostics = {
+      -- you can use a list
+      {enabled = true, icon = 'ﬀ'}, -- ERROR
+      {enabled = false}, -- WARN
+      {enabled = false}, -- INFO
+      {enabled = true},  -- HINT
+    }
+  },
 
   -- If set, the icon color will follow its corresponding buffer
   -- highlight group. By default, the Buffer*Icon group is linked to the
   -- Buffer* group (see Highlighting below). Otherwise, it will take its
   -- default value as defined by devicons.
   icon_custom_colors = false,
-
-  -- Configure icons on the bufferline.
-  icon_separator_active = '▎',
-  icon_separator_inactive = '▎',
-  icon_close_tab = '',
-  icon_close_tab_modified = '●',
-  icon_pinned = '車',
 
   -- Sets the maximum padding width with which to surround each tab
   maximum_padding = 1,
