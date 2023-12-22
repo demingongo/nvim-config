@@ -13,6 +13,8 @@ source $HOME/.config/nvim/plugins/nvim-treesitter.lua.vim
 source $HOME/.config/nvim/plugins/barbar.lua.vim
 
 "
+source $HOME/.config/nvim/plugins/lualine.lua.vim
+"
 source $HOME/.config/nvim/plugins/feline.lua.vim
 "
 source $HOME/.config/nvim/plugins/gitsigns.lua.vim

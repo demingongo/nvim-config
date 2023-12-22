@@ -17,6 +17,8 @@ Plug 'ellisonleao/gruvbox.nvim'
 " https://github.com/jesseleite/nvim-noirbuddy
 Plug 'tjdevries/colorbuddy.nvim', { 'branch': 'dev' }
 Plug 'jesseleite/nvim-noirbuddy'
+" https://github.com/Mofiqul/dracula.nvim
+Plug 'Mofiqul/dracula.nvim'
 
 " https://github.com/nvim-treesitter/nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -30,6 +32,8 @@ Plug 'romgrk/barbar.nvim'
 
 " https://github.com/feline-nvim/feline.nvim
 Plug 'feline-nvim/feline.nvim'
+" https://github.com/nvim-lualine/lualine.nvim
+Plug 'nvim-lualine/lualine.nvim'
 
 " https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'
